@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"> <!-- CSSファイルのリンク -->
+    <title>Animal Predict App</title>
+</head>
+<body>
+    <h1 class="centered-text">
+        <div class="description">あなたのお耳が立っているか垂れているか判定します</div>
+    </h1>
+    <div class="sample_box2_4">
+        たちミミ or たれミミ
+    </div>
+    <div class="image-container">
+        <img src="{{ url_for('static', filename='images/IMG_0898 2.PNG') }}" class="fixed-size-image" alt="耳のイメージ">
+    </div>
+    <form method="post" enctype="multipart/form-data">
+        <label class="file-label">
+            <span>ファイルを選択</span>
+            <input type="file" name="filename" class="file-input" onchange="updateFileName()">
+        </label>
+        <span id="file-name">ファイルが選択されていません</span>
+        <p><input type="submit" value="判定" class="submit-button"></p>
+    </form>
+    <script>
+        function updateFileName() {
+            const input = document.querySelector('.file-input');
+            const fileNameDisplay = document.getElementById('file-name');
+            if (input.files.length > 0) {
+                fileNameDisplay.textContent = input.files[0].name;
+            } else {
+                fileNameDisplay.textContent = 'ファイルが選択されていません';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Arial', sans-serif; /* フォントファミリーの指定 */
+  background-color: #f8f4e6; /* 背景色 */
+}
+
+h1 {
+  text-align: center;
+  margin: 0; /* マージンを完全に取り除く */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px; /* フォームの上部のマージン */
+}
+
+.description {
+  color: #2f4f4f; /* テキスト色 */
+  text-align: center; /* 中央寄せ */
+  margin: 0; /* マージンを完全に取り除く */
+  font-size: 16px; /* フォントサイズを小さくする */
+  line-height: 1.2; /* 行間の指定 */
+}
+
+.sample_box2_4 {
+  padding: 0; /* パディングを取り除く */
+  margin: 30px 0 0 0; /* 上に少しだけマージンを追加 */
+  font-family: '晩秋レトロミン', sans-serif; /* フォントファミリーの指定 */
+  color: #2f4f4f; /* 文字色 */
+  text-align: center; /* 中央寄せ */
+  font-size: 80px; /* フォントサイズの指定 */
+  line-height: 1; /* 行間を詰める */
+}
+
+.sample_box2_4 p {
+  margin: 0;
+  padding: 0;
+}
+
+.file-label {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #347a65; /* ボタンの背景色 */
+  color: white; /* ボタンのテキスト色 */
+  font-size: 20px; /* フォントサイズの指定 */
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px; /* ボタンとファイル名表示の間のマージン */
+  font-family: '晩秋レトロミン', sans-serif; /* フォントファミリーの指定 */
+}
+
+.file-input {
+  display: none; /* 実際のファイル選択ボタンを非表示にする */
+}
+
+.file-label:hover {
+  background-color: #2b5d4e; /* ホバー時の背景色 */
+}
+
+#file-name {
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px; /* 上部のマージン */
+}
+
+/* 共通のボタンスタイル */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #347a65; /* ボタンの背景色 */
+  color: white; /* ボタンのテキスト色 */
+  font-family: '晩秋レトロミン', sans-serif; /* フォントファミリーの指定 */
+  font-size: 20px; /* フォントサイズの指定 */
+  margin-top: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none; /* ボーダーを削除 */
+  text-decoration: none; /* リンクの下線を削除 */
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #2b5d4e; /* ホバー時の背景色 */
+}
+
+.submit-button {
+  /* 共通のボタンスタイルをクラスとして追加 */
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #347a65; /* ボタンの背景色 */
+  color: white; /* ボタンのテキスト色 */
+  font-family: '晩秋レトロミン', sans-serif; /* フォントファミリーの指定 */
+  font-size: 20px; /* フォントサイズの指定 */
+  border-radius: 5px;
+  cursor: pointer;
+  border: none; /* ボーダーを削除 */
+  text-decoration: none; /* リンクの下線を削除 */
+  text-align: center;
+}
+
+.submit-button:hover {
+  background-color: #2b5d4e; /* ホバー時の背景色 */
+}
+
+.answer {
+  color: #2f4f4f; /* テキスト色 */
+  text-align: center; /* 中央寄せ */
+  margin-bottom: 0; /* 下部のマージン */
+  font-size: 40px; /* フォントサイズの指定 */
+  line-height: 3; /* 行間の指定 */
+}
+
+/* 画像サイズを固定するクラス */
+.fixed-size-image {
+  width: 300px; /* 固定したい幅を小さく設定 */
+  height: auto; /* 自動で高さを調整 */
+  max-height: 300px; /* 固定したい最大高さを小さく設定 */
+  object-fit: contain; /* 画像の表示方法を調整 */
+  margin: 0; /* マージンを完全に取り除く */
+  background-color: transparent; /* 背景色を透過 */
+}
+
+/* 画像とボタンの間に余白を追加するクラス */
+.image-container {
+  margin-bottom: 0; /* 画像の下の余白を取り除く */
+  display: flex;
+  justify-content: center; /* 画像を中央に配置 */
+}

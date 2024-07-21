@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"> <!-- CSSファイルのリンク -->
+    <title>Animal Predict App</title>
+</head>
+<body>
+    {% if animalName %}
+        <h1 class="answer">
+            この子は {{ animalName }} です。かわいいですねえ
+        </h1>
+        <div class="image-container">
+            <img src="{{ image }}" class="fixed-size-image">
+        </div>
+    {% endif %}
+    <a href="./" class="button">トップへもどる</a>
+</body>
+</html>
